@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container" id="drop-area1">
+        <div draggable="true" class="box">1</div>
+        <div draggable="true" class="box">2</div>
+        <div draggable="true" class="box">3</div>
+        <div draggable="true" class="box">4</div>
+        <div draggable="true" class="box">5</div>
+        <div draggable="true" class="box">6</div>
+        <div draggable="true" class="box">7</div>
+        <div draggable="true" class="box">8</div>
+        <div draggable="true" class="box">9</div>
+        <div draggable="true" class="box">10</div>
+        <div draggable="true" class="box">11</div>
+        <div draggable="true" class="box">12</div>
+        <div draggable="true" class="box">13</div>
+        <div draggable="true" class="box">14</div>
+        <div draggable="true" class="box">15</div>
+        <div draggable="true" class="box">16</div>
+        <div draggable="true" class="box">17</div>
+        <div draggable="true" class="box">18</div>
+        <div draggable="true" class="box">19</div>
+        <div draggable="true" class="box">20</div>
+        <div draggable="true" class="box">21</div>
+        <div draggable="true" class="box">22</div>
+        <div draggable="true" class="box">23</div>
+        <div draggable="true" class="box">24</div>
+        <div draggable="true" class="box">25</div>
+        <div draggable="true" class="box">26</div>
+        <div draggable="true" class="box">27</div>
+        <div draggable="true" class="box">28</div>
+        <div draggable="true" class="box">29</div>
+        <div draggable="true" class="box">30</div>
+        <div draggable="true" class="box">31</div>
+        <div draggable="true" class="box">32</div>
+      </div>
+      <button id="fullscreen-btn" class="button" onclick="toggleFullscreen()">Полноэкранный режим</button>
+
+      <button class="btn" onclick="changeValues()">Изменить значения</button>
+      <div id="drop-area" ondragover="dragOverHandler(event)" ondrop="dropHandler(event)" ondragenter="dragEnterHandler(event)" ondragleave="dragLeaveHandler(event)">
+        <p id="drag-text">Перетащите файл с именами VIP сюда</p>
+      </div>
+      <textarea id="vip-list" cols="30" rows="10"></textarea><br>
+      <button onclick="copyToClipboard()">Скопировать в буфер обмена</button>
+      <button onclick="downloadVIPList()">Скачать</button>
+        <script src="script.js"></script>
+    </body>
+</html>
